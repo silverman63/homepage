@@ -1,20 +1,14 @@
+@use "bass.scss" as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400;1,700&display=swap');
 
-* { box-sizing: border-box;}
-
-body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-#container {
+#homesplash {
     display: grid;
     position: absolute;
     margin: 0;
     border: 0;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30% 30% 40%;
     grid-template-columns: 20% 20% 20% 20% 20%;
     top: 0;
     left: 0;
@@ -25,85 +19,11 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
-#container.page {
-    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-
-    div#hello {
-        grid-row: 2 / span 4;
-        grid-column: 1 / span 12;
-        max-height:220px;
-    }
-
-    section#social {
-        grid-row: 10 / span 1 !important;
-        grid-column: 6 / span 3;
-        margin: 0;
-        display: none;
-    }
-
-    section#projects {
-        grid-row: 7 / 11;
-        grid-column: 3 / span 8;
-        display: flex;
-        justify-content: space-evenly;
-
-        div {
-            // background: #f8f8f8;
-            color: #585855;
-            // border-top: rgb(204, 170, 91) 3px solid;
-            width: 350px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-top: 3px solid #f8f8f8;
-
-            h3 {
-                font-weight: 800;
-                font-size: 48px;
-                width: 100%;
-            }
-
-            span {
-                display: none;
-                height: 0;
-                background: #eee;
-            }
-
-            &:hover {
-                // background:#fdf4d8;
-                // transition: background-color 0.2s linear;
-                border-top: rgb(255, 213, 116) 3px solid;
-                transition: border-top 0.2s linear;
-                cursor: pointer;
-
-                span {
-                    display: block;
-                    height: 100%;
-                    transition: height 1s ease-out;
-                }
-            }
-
-            &:before {
-                box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
-                background-color: rgba(0, 0, 0, 0.25);
-                width:350px;
-                height: 150px;
-                content: '';
-                left: 5px;
-                top: 30%;
-            }
-        }
-    }
-
-}
-
 div#hello {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-row: 3;
+    grid-row: 2;
     grid-column: 1 / 6;
     background: white;
     padding-left: 20px;
@@ -111,6 +31,11 @@ div#hello {
     min-height: 220px;
     flex-wrap: wrap;
     flex-shrink: 1;
+
+    a {
+        color: blueviolet;
+        text-decoration: none;
+    }
 
     h1 {
         font-size: 2em;
@@ -123,12 +48,12 @@ div#hello {
     }
     
     div {
-    font-size: 18px;
-    font-family: 'Gloria Hallelujah';
-    margin-right: -25px;
-    align-self: flex-start;
-    margin-top: 40px;
-    transform: rotate(-20deg);
+        font-size: 18px;
+        font-family: 'Gloria Hallelujah';
+        margin-right: -25px;
+        align-self: flex-start;
+        margin-top: 40px;
+        transform: rotate(-20deg);
     }
 
     div:nth-child(odd) {
@@ -152,7 +77,7 @@ section#social {
     margin: 100px auto;
     align-items: center;
     justify-content: space-evenly;
-    grid-row: 4;
+    grid-row: 3;
     grid-column: 3;
     border-radius: 15px;
     background: white;
@@ -177,7 +102,7 @@ section#social {
 
 #credits {
     display: flex;
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 2 / span 3;
     align-items: flex-end;
     justify-content: center;
@@ -187,16 +112,6 @@ section#social {
     #credits div {
         margin-top: -40px;
     }
-}
-
-.fs24 {
-    font-size: 24px !important;
-}
-.fs20 {
-    font-size: 20px !important;
-}
-.fs12 {
-    font-size: 12px !important;
 }
 
 @media (max-width: 1100px) {
@@ -240,8 +155,10 @@ section#social {
 
 @media (max-width: 460px) {
     div#hello {
+        grid-row: 1 / span 2 !important;
         width: 95%;
         margin: 0 auto;
+        margin-top: 10vh;
         border-radius: 15px;
         min-height: 250px;
         h1 {
