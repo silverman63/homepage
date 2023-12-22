@@ -22,6 +22,22 @@ body {
   font-size: 12px !important;
 }
 
+section#projects {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  grid-column: 3/6;
+  grid-row: 2;
+}
+section#projects div {
+  display: block;
+}
+
+body {
+  background: rgb(236, 204, 131);
+}
+
 #homesplash {
   display: grid;
   position: absolute;
@@ -33,7 +49,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(236, 204, 131);
   font-family: "Open Sans", Arial, sans-serif;
 }
 
