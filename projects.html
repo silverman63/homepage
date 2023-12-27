@@ -3,8 +3,12 @@
 <head>
     <title>Alex Silverman</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style/style.css?v=0.11" />
+    <link rel="stylesheet" href="newstyle/dist/style.css?v=.12" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Permanent+Marker&display=swap" rel="stylesheet">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0706R5ZH9"></script>
     <script>
@@ -18,24 +22,38 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 </head>
-<body>
-<div id="homesplash" class="">
-    <section id="projects">
-        <div><h3>DreidelJS</h3><span>hellO!</span></div>
-        <div><h3>PriorityTodo</h3></div>
-    </section>
-    <section id="social">
-        <a target="_blank" href="https://twitter.com/silverman63">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a target="_blank" href="https://github.com/silverman63">
-            <i class="fab fa-github"></i>
-        </a>
-        <a target="_blank" href="https://linkedin.com/in/theoriginalalexsilverman">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </section>
-    <section id="credits">
+<body class="bg-yellow-300 flex flex-col h-screen place-items-center">
+    <h1 class="mt-20 mb-4 text-7xl tracking-tight font-extrabold mb-20 text-primary-600">
+        Projects
+    </h1>
+
+    <div class="bg-white my-3 rounded-xl shadow-lg p-6 min-h-4 flex flex-row w- 8/12 lg:w-5/12">
+        <div class="w-5/12 p-2 mr-10 self-center rounded-md -mt-5 marker">
+            <h2 class="text-xl font-bold tracking-wider leading-10 text-slate-950"><i>How to Sound Good Talking About What You Shipped</i></h2>
+        </div>
+        <div class="w-7/12">
+            <p class="text-lg text-slate-950">
+                A talk I presented at NYT Maker Week 2023. 
+            </p>
+            <a href="#" class="inline-flex text-white bg-red-500 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</a>
+        </div>   
+    </div>
+    <div class="bg-white my-3 rounded-xl shadow-lg p-6 min-h-4 flex flex-row w- 8/12 lg:w-5/12">
+        <div class="w-5/12 p-2 mr-10 self-center rounded-md -mt-5 marker">
+            <h2 class="text-xl font-bold tracking-wider leading-10 text-slate-950"><i>Backlog Bumpers for Busy PMs</i></h2>
+        </div>
+        <div class="w-7/12">
+            <p class="text-lg text-slate-950">
+                An article on how to use extra sprints in a JIRA backlog to optimize sprint planning processes.
+            </p>
+            <a href="#" class="inline-flex text-white bg-red-500 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</a>
+        </div>   
+    </div>
+
+
+
+
+    <section id="credits" class="flex">
         <div class="fs12">© 2021</div>
     </section>
 </div>

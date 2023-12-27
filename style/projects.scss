@@ -1,0 +1,12 @@
+section#projects {
+    display:flex;
+    width: 100%;
+    margin:0 auto;
+    text-align:center;
+    grid-column: 3 / 6;
+    grid-row: 2;
+
+    div {
+        display: block;
+    }
+}
