@@ -82,14 +82,16 @@ div#hello h1 {
 div#hello div {
   font-size: 18px;
   font-family: "Gloria Hallelujah";
-  /* margin-right: -25px; */
+  margin-right: -25px;
   align-self: flex-start;
+  transform: rotate(-20deg);
   margin-top: 40px;
 }
 div#hello div:nth-child(odd) {
   align-self: flex-end;
   margin-top: 0;
   margin-bottom: 40px;
+  transform: rotate(20deg);
 }
 div#hello div:last-child {
   margin: 0 25px;
