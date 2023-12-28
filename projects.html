@@ -3,12 +3,12 @@
 <head>
     <title>Alex Silverman</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="newstyle/dist/style.css" />
+    <link rel="stylesheet" href="newstyle/dist/style.css?v=0.12" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Permanent+Marker&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0706R5ZH9"></script>
     <script>
@@ -23,44 +23,35 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 </head>
 <body class="bg-yellow-300 flex flex-col h-screen place-items-center">
-    <h1 class="mt-20 mb-4 text-7xl tracking-tight font-extrabold mb-20 text-primary-600">
-        Projects
+    <h1 class="text-center mt-20 mb-8 lg:mb-12 text-7xl tracking-tight font-extrabold mb-20 text-primary-600 marker">
+        Talks & Writing
     </h1>
 
-    <div class="border-yellow-900 border-4 bg-white my-3 rounded-xl shadow-lg p-6 min-h-4 flex flex-col w-8/12 lg:w-5/12">
-        <div class="self-start w-1/4 mx-auto -mt-9 mb-3 z-10 text-center bg-red-500 text-white rounded-lg">Talk</div>
-        <div class="!w-full flex flex-row">
-            <div class="w-5/12 p-2 mr-10 self-center rounded-md -mt-5">
-                <h2 class="text-xl font-semibold tracking-tight leading-7 text-slate-900">How to Sound Good Talking About What You Shipped</h2>
-            </div>
-            <div class="w-7/12">
-                <p class="text-lg text-slate-950">
-                    A talk I presented at NYT Maker Week 2023. 
-                </p>
-                <a href="#" class="inline-flex text-white bg-blue-500 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</a>
-            </div> 
-        </div>  
-    </div>
-    <div class="border-yellow-900 border-4 bg-white my-3 rounded-xl shadow-lg p-6 min-h-4 flex flex-col w-8/12 lg:w-5/12 justify-center">
-        <div class="self-start w-1/4 mx-auto -mt-9 mb-3 z-10 text-center bg-red-500 text-white rounded-lg">Article</div>
-        <div class="!w-full flex flex-row">
-            <div class="w-5/12 p-2 mr-10 self-center rounded-md -mt-5">
-                <h2 class="text-xl font-semibold tracking-wider leading-7 text-slate-900">Backlog Bumpers for Busy PMs</h2>
-            </div>
-            <div class="w-7/12">
-                <p class="text-lg text-slate-950">
-                    An article on how to use extra sprints in a JIRA backlog to optimize sprint planning processes.
-                </p>
-                <a href="#" class="inline-flex text-white bg-blue-500 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</a>
-            </div>
+    <a class="h-24 box-content p-6 bg-white my-8 rounded-md shadow-lg min-h-4 flex flex-col w-10/12 md:w-8/12 lg:w-6/12 xl:w-4/12 justify-center" href="#">
+        <div class="self-start w-1/4 mx-auto -mt-9 mb-auto z-10 text-center text-sm bg-red-700 text-white rounded-full font-extrabold tracking-wide">talk</div>
+        <div class="self-end !w-full !h-full flex flex-row content-center">
+            <h2 class="self-center lg:w-5/12 md:w-6/12 w-7/12 mr-5 text-xl font-semibold tracking-wider leading-7 text-slate-900">How to Sound Good Talking About What You Shipped</h2>
+            <p class="self-center lg:w-7/12 md:w-6/12 w-5/12 text-md text-slate-950 tracking-tight">
+                Product Storytelling 101 for those working on projects at NYT Maker Week 2023.
+            </p>
         </div>
-    </div>
+    </a>
+    <a class="h-24 box-content p-6 bg-white my-8 rounded-md shadow-lg min-h-4 flex flex-col w-10/12 md:w-8/12 lg:w-6/12 xl:w-4/12 justify-center" href="#">
+        <div class="self-start w-1/4 mx-auto -mt-9 mb-auto z-10 text-center text-sm bg-red-700 text-white rounded-full font-extrabold tracking-wide">writing</div>
+        <div class="self-end !w-full !h-full flex flex-row content-center">
+            <h2 class="self-center lg:w-5/12 md:w-6/12 w-7/12 p-1 mr-5 text-xl font-semibold tracking-wider leading-7 text-slate-900">
+                Backlog Bumpers for Busy PMs
+            </h2>
+            <p class="self-center lg:w-7/12 md:w-6/12 w-5/12 text-md text-slate-950 tracking-tight">
+                Optimizing your sprint ceremonies using extra sprints in the JIRA backlog.
+            </p>
+        </div>
+    </a>
 
 
 
-
-    <section id="credits" class="flex">
-        <div class="fs12">© 2021</div>
+    <section id="credits" class="absolute bottom-0 w-full">
+        <div class="font-light text-xs">&copy; <span class="marker">2023</span></div>
     </section>
 </div>
 </body>
