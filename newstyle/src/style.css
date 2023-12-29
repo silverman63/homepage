@@ -42,12 +42,12 @@ body {
 }
 
 #homesplash {
-  display: grid;
+  /* display: grid; */
   position: absolute;
   margin: 0;
   border: 0;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: 20% 20% 20% 20% 20%; */
   top: 0;
   left: 0;
   width: 100%;
@@ -208,14 +208,17 @@ section#social section#social a i:hover {
 }
 
 #docsButton {
-  transform:rotate3d(5, 1.2, 0.25, 25deg);
-  --animate-delay: 0.25s;
+  /* transform:rotate3d(5, 1.2, 0.25, 25deg); */
+  scale: 65%;
 }
 
 #projectButton {
-  transform:rotate3d(-5, 1.2, 1.5, -14deg);
-  --animate-delay: 0.25s;
+  /* transform:rotate3d(-5, 1.2, 1.5, -14deg); */
+  scale: 65%;
+}
 
+#avatar, #homesplash a {
+  --animate-delay: 0.25s;
 }
 
 .marker {
